@@ -37,7 +37,7 @@ window.onload = async function () {
 
 async function fetchCoinData() {
   const url =
-    "https://api.coingecko.com/api/v3/coins/markets";
+    "https://api.coingecko.com/api/v3/simple/price";
   const res = await fetch(url);
   const data = await res.json();
   return data;
